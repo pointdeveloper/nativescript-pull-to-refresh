@@ -1,0 +1,15 @@
+<StackLayout class="p-20">
+
+    <PullToRefresh (refresh)="refreshMe($event)">
+    
+        <ListView [items]="myItems">
+            <template let-item="item" let-i="index">
+                <StackLayout>
+                    <Label [text]='"item number " + item'></Label>
+                </StackLayout>
+            </template>
+        </ListView>
+        
+    </PullToRefresh>
+
+</StackLayout>
